@@ -1,7 +1,3 @@
-USE master
-
-DROP DATABASE ex9
-
 CREATE DATABASE ex9
 GO
 USE ex9
@@ -44,7 +40,7 @@ FOREIGN KEY (codEstoque) REFERENCES estoque (codigo)
 GO
 INSERT INTO editora VALUES
 (1,'Pearson','www.pearson.com.br'),
-(2,'CivilizaÁ„o Brasileira',NULL),
+(2,'Civiliza√ß√£o Brasileira',NULL),
 (3,'Makron Books','www.mbooks.com.br'),
 (4,'LTC','www.ltceditora.com.br'),
 (5,'Atual','www.atualeditora.com.br'),
@@ -53,21 +49,21 @@ GO
 INSERT INTO autor VALUES
 (101,'Andrew Tannenbaun','Desenvolvedor do Minix'),
 (102,'Fernando Henrique Cardoso','Ex-Presidente do Brasil'),
-(103,'Diva MarÌlia Flemming','Professora adjunta da UFSC'),
+(103,'Diva Mar√≠lia Flemming','Professora adjunta da UFSC'),
 (104,'David Halliday','Ph.D. da University of Pittsburgh'),
-(105,'Alfredo Steinbruch','Professor de Matem·tica da UFRS e da PUCRS'),
-(106,'Willian Roberto Cereja','Doutorado em Ling¸Ìstica Aplicada e Estudos da Linguagem'),
-(107,'William Stallings','Doutorado em CiÍncias da Computac„o pelo MIT'),
+(105,'Alfredo Steinbruch','Professor de Matem√°tica da UFRS e da PUCRS'),
+(106,'Willian Roberto Cereja','Doutorado em Ling√º√≠stica Aplicada e Estudos da Linguagem'),
+(107,'William Stallings','Doutorado em Ci√™ncias da Computac√£o pelo MIT'),
 (108,'Carlos Morimoto','Criador do Kurumin Linux')
 GO
 INSERT INTO estoque VALUES
 (10001,'Sistemas Operacionais Modernos ',4,108.00,1,101),
-(10002,'A Arte da PolÌtica',2,55.00,2,102),
+(10002,'A Arte da Pol√≠tica',2,55.00,2,102),
 (10003,'Calculo A',12,79.00,3,103),
-(10004,'Fundamentos de FÌsica I',26,68.00,4,104),
-(10005,'Geometria AnalÌtica',1,95.00,3,105),
-(10006,'Gram·tica Reflexiva',10,49.00,5,106),
-(10007,'Fundamentos de FÌsica III',1,78.00,4,104),
+(10004,'Fundamentos de F√≠sica I',26,68.00,4,104),
+(10005,'Geometria Anal√≠tica',1,95.00,3,105),
+(10006,'Gram√°tica Reflexiva',10,49.00,5,106),
+(10007,'Fundamentos de F√≠sica III',1,78.00,4,104),
 (10008,'Calculo B',3,95.00,3,103)
 GO
 INSERT INTO compra VALUES
