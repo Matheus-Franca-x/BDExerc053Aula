@@ -210,7 +210,7 @@ SELECT codigo, DATEDIFF(DAY, dataCompra, GETDATE()) AS dias_compra, DATEDIFF(MON
 FROM compra
 
 --16 O código da compra e a soma dos valores gastos das compras que somam mais de 200.00.
-SELECT codigo, SUM(valor)
+SELECT codigo, SUM(valor) AS valor_total
 FROM compra
 GROUP BY codigo
 HAVING SUM(valor) > 200
