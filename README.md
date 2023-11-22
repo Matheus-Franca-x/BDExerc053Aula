@@ -50,24 +50,24 @@ Código(PK)|	Cod. Livro(PK)(FK)	|Qtd Comprada(Qtd > 0)	|Valor(Valor > 0)	|Data C
 15054	|10008	|1	|95.00	|2020-08-06
 
 ## Consultar:
-- Nome, valor unitário, nome da editora e nome do autor dos livros do estoque que foram vendidos. Não podem haver repetições.
-- Nome do livro, quantidade comprada e valor de compra da compra 15051
-- Nome do livro e site da editora dos livros da Makron books (Caso o site tenha mais de 10 dígitos, remover o www.).
-- Nome do livro e Breve Biografia do David Halliday
-- Código de compra e quantidade comprada do livro Sistemas Operacionais Modernos
-- Quais livros não foram vendidos
-- Quais livros foram vendidos e não estão cadastrados
-- Nome e site da editora que não tem Livros no estoque (Caso o site tenha mais de 10 dígitos, remover o www.)
-- Nome e biografia do autor que não tem Livros no estoque (Caso a biografia inicie com Doutorado, substituir por Ph.D.)
-- O nome do Autor, e o maior valor de Livro no estoque. Ordenar por valor descendente
-- O código da compra, o total de livros comprados e a soma dos valores gastos. Ordenar por Código da Compra ascendente.
-- O nome da editora e a média de preços dos livros em estoque.Ordenar pela Média de Valores ascendente.
-- O nome do Livro, a quantidade em estoque o nome da editora, o site da editora (Caso o site tenha mais de 10 dígitos, remover o www.), criar uma coluna status onde:
-  - Caso tenha menos de 5 livros em estoque, escrever Produto em Ponto de Pedido
-  - Caso tenha entre 5 e 10 livros em estoque, escrever Produto Acabando
-  - Caso tenha mais de 10 livros em estoque, escrever Estoque Suficiente
-  - A Ordenação deve ser por Quantidade ascendente
-- Para montar um relatório, é necessário montar uma consulta com a seguinte saída: Código do Livro, Nome do Livro, Nome do Autor, Info Editora (Nome da Editora + Site) de todos os livros
-  - Só pode concatenar sites que não são nulos
-- Codigo da compra, quantos dias da compra até hoje e quantos meses da compra até hoje
-- O código da compra e a soma dos valores gastos das compras que somam mais de 200.00
+1) Nome, valor unitário, nome da editora e nome do autor dos livros do estoque que foram vendidos. Não podem haver repetições.
+2) Nome do livro, quantidade comprada e valor de compra da compra 15051
+3) Nome do livro e site da editora dos livros da Makron books (Caso o site tenha mais de 10 dígitos, remover o www.).
+4) Nome do livro e Breve Biografia do David Halliday
+5) Código de compra e quantidade comprada do livro Sistemas Operacionais Modernos
+6) Quais livros não foram vendidos
+7) Quais livros foram vendidos e não estão cadastrados
+8) Nome e site da editora que não tem Livros no estoque (Caso o site tenha mais de 10 dígitos, remover o www.)
+9) Nome e biografia do autor que não tem Livros no estoque (Caso a biografia inicie com Doutorado, substituir por Ph.D.)
+10) O nome do Autor, e o maior valor de Livro no estoque. Ordenar por valor descendente
+11) O código da compra, o total de livros comprados e a soma dos valores gastos. Ordenar por Código da Compra ascendente.
+12) O nome da editora e a média de preços dos livros em estoque.Ordenar pela Média de Valores ascendente.
+13) O nome do Livro, a quantidade em estoque o nome da editora, o site da editora (Caso o site tenha mais de 10 dígitos, remover o www.), criar uma coluna status onde:
+    1) Caso tenha menos de 5 livros em estoque, escrever Produto em Ponto de Pedido
+    2) Caso tenha entre 5 e 10 livros em estoque, escrever Produto Acabando
+    3) Caso tenha mais de 10 livros em estoque, escrever Estoque Suficiente
+    4) A Ordenação deve ser por Quantidade ascendente
+14) Para montar um relatório, é necessário montar uma consulta com a seguinte saída: Código do Livro, Nome do Livro, Nome do Autor, Info Editora (Nome da Editora + Site) de todos os livros
+    1) Só pode concatenar sites que não são nulos
+15) Codigo da compra, quantos dias da compra até hoje e quantos meses da compra até hoje
+16) O código da compra e a soma dos valores gastos das compras que somam mais de 200.00
